@@ -23,6 +23,16 @@ let quit = false;
         };
         break;
 
+      case 'roles':
+        template = {
+          'file name': { name: 'emoji name' }, // typing this makes the emoji pop up
+        };
+        break;
+
+      case 'emojis':
+        template = {};
+        break;
+
       default:
         template = {};
         break;

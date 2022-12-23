@@ -5,7 +5,7 @@ const truncate = (str, limit) => str.slice(0, limit);
 const iData = (fName) => fs.readFileSync(`./${cName}/images/${fName}.png`);
 
 const collection = () => {
-  let data = require(`./${cName}/metadata.json`);
+  let data = require(`./metadata.json`);
 
   Object.keys(data).forEach((fName) => {
     const entry = data[fName];
@@ -19,7 +19,7 @@ const collection = () => {
       // filters
     }
 
-    data[fName].image = iData(cName, fName);
+    data[fName].image = iData(fName);
   });
 
   return data;
