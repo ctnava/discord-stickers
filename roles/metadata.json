@@ -1,0 +1,10 @@
+{
+  "roleIconFileName": {
+    "name": "role name",
+    "color": "#000000",
+    "permissions": [],
+    "separate": false,
+    "mentions": false,
+    "hasIcon": true
+  }
+}
