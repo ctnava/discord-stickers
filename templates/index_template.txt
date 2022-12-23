@@ -1,9 +1,11 @@
+const fs = require('fs');
+const cName = __dirname.split(process.cwd())[1].split('\\')[1];
+
 const truncate = (str, limit) => str.slice(0, limit);
-const iData = (fName) => fs.readFileSync(`${__dirname}/images/${fName}.png`);
+const iData = (fName) => fs.readFileSync(`./${cName}/images/${fName}.png`);
 
 const collection = () => {
-  let data = require(`${__dirname}/metadata.json`);
-  const cName = __dirname.split('/')[__dirname.split('/').length];
+  let data = require(`./${cName}/metadata.json`);
 
   Object.keys(data).forEach((fName) => {
     const entry = data[fName];
