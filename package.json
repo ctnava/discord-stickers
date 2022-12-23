@@ -1,0 +1,27 @@
+{
+  "name": "discord-addons",
+  "version": "1.0.0",
+  "description": "my favorite discord sticker, roles, and emojis",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ctnava/discord-stickers.git"
+  },
+  "keywords": [
+    "discord",
+    "stickers",
+    "roles",
+    "emojis",
+    "emoji",
+    "cat6",
+    "hemlock",
+    "0xmiss_hemlock",
+    "taira"
+  ],
+  "author": "ctnava.github.io",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/ctnava/discord-stickers/issues"
+  },
+  "homepage": "https://github.com/ctnava/discord-stickers#readme"
+}
