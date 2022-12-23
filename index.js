@@ -9,7 +9,6 @@ let quit = false;
     quit = true;
     fs.mkdirSync(`${base}/images`, { recursive: true });
     fs.mkdirSync(`${base}/reference`);
-    fs.copyFileSync(`./templates/index_template.txt`, `${base}/index.js`);
 
     let template;
     switch (cName) {
@@ -42,6 +41,8 @@ let quit = false;
       JSON.stringify(template, undefined, 2)
     );
   }
+
+  fs.copyFileSync(`./templates/index_template.txt`, `${base}/index.js`);
 });
 
 if (quit) {
